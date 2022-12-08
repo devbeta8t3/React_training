@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import App2 from './App2';
 
 // function Clock(props) {
 //   return (
@@ -66,7 +67,11 @@ function App() {
 */
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App />);
+root.render(
+  <React.StrictMode>
+    <App2 />
+  </React.StrictMode>
+);
 
 
 // function tick() {
